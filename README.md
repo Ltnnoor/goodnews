@@ -45,7 +45,7 @@
     <div id="news" class="news-container">
         <p>Good news! You now have less than a 0.001% chance of being hit by a cyclist.</p>
         <p>Good news! Your company will not be sold to fake Khaleejis.</p>
-        <p>Good news! Noor is not going to any visa-required countries.</p>
+        <p>Good news! Noor is not going to any visa-required countries and is also having drinks with very cool people at her place tonight 7.30pm onwards !.</p>
     </div>
 
     <script>
