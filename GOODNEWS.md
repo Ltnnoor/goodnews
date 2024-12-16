@@ -6,48 +6,65 @@
     <title>Good News</title>
     <style>
         body {
+            background-color: #FFF1D7; /* Soft light yellow */
+            color: #749BF1; /* Light blue font color */
+            font-family: Arial, sans-serif;
             display: flex;
-            align-items: center;
             justify-content: center;
-            flex-direction: column;
+            align-items: center;
             height: 100vh;
             margin: 0;
-            font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #f0f8ff;
         }
-        h1, p {
-            margin-bottom: 20px;
+
+        .semi-circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 80%;
+            margin-top: 0;
+            position: relative;
+            transform: rotate(180deg); /* Flip the text to create a semi-circle */
+            font-size: 24px;
+            font-weight: bold;
         }
-        .btn {
+
+        .semi-circle span {
             display: inline-block;
-            padding: 10px 20px;
-            font-size: 18px;
+            margin: 0 10px;
+            transform-origin: center center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        button {
+            background-color: #749BF1; /* Light blue */
             color: white;
-            background-color: #007bff;
+            font-size: 16px;
+            padding: 10px 20px;
             border: none;
             border-radius: 5px;
-            text-decoration: none;
             cursor: pointer;
+            margin-top: 20px;
         }
-        .btn:hover {
-            background-color: #0056b3;
-        }
-        #good-news {
-            display: none; /* Initially hidden */
-            color: #2d2d2d;
-            font-size: 18px;
+
+        button:hover {
+            background-color: #6079A6; /* Slightly darker blue for hover effect */
         }
     </style>
-    <script>
-        function showGoodNews() {
-            document.getElementById('good-news').style.display = 'block';
-        }
-    </script>
 </head>
 <body>
-    <h1>With each bad news comes good news. Here is the one waiting for you.</h1>
-    <button class="btn" onclick="showGoodNews()">Click here for good news</button>
-    <p id="good-news">The good news is: You are capable of amazing things, and brighter days are ahead!</p>
+    <div class="container">
+        <div class="semi-circle">
+            <span>With each bad news</span>
+            <span>comes good ones.</span>
+        </div>
+        <button onclick="alert('Here’s the good news waiting for you!')">Click here for good news</button>
+    </div>
 </body>
 </html>
