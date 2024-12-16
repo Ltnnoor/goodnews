@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -40,7 +39,7 @@
     </style>
 </head>
 <body>
-    <h1>Click to see good news!</h1>
+    <h1>With each bad news comes good news. Here is the ones waiting for you.</h1>
     <button onclick="toggleNews()">Click to see good news</button>
     
     <div id="news" class="news-container">
